@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+    <h2>Table 1</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Index #</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody id="t1">
+        <tr>
+          <th scope="row">A1</th>
+          <td>41</td>
+        </tr>
+        <tr>
+          <th scope="row">A2</th>
+          <td>18</td>
+        </tr>
+        <tr>
+          <th scope="row">A3</th>
+          <td>21</td>
+        </tr>
+        <tr>
+          <th scope="row">A4</th>
+          <td>63</td>
+        </tr>
+        <tr>
+          <th scope="row">A5</th>
+          <td id="a1">2</td>
+        </tr>
+        <tr>
+          <th scope="row">A6</th>
+          <td>53</td>
+        </tr>
+        <tr>
+          <th scope="row">A7</th>
+          <td id="b2">5</td>
+        </tr>
+        <tr>
+          <th scope="row">A8</th>
+          <td>57</td>
+        </tr>
+        <tr>
+          <th scope="row">A9</th>
+          <td>60</td>
+        </tr>
+        <tr>
+          <th scope="row">A10</th>
+          <td>93</td>
+        </tr>
+        <tr>
+          <th scope="row">A11</th>
+          <td>28</td>
+        </tr>
+        <tr>
+          <th scope="row">A12</th>
+          <td id="c2">3</td>
+        </tr>
+        <tr>
+          <th scope="row">A13</th>
+          <td id="c1">90</td>
+        </tr>
+        <tr>
+          <th scope="row">A14</th>
+          <td>39</td>
+        </tr>
+        <tr>
+          <th scope="row">A15</th>
+          <td id="b1">80</td>
+        </tr>
+        <tr>
+          <th scope="row">A16</th>
+          <td>88</td>
+        </tr>
+        <tr>
+          <th scope="row">A17</th>
+          <td>49</td>
+        </tr>
+        <tr>
+          <th scope="row">A18</th>
+          <td>60</td>
+        </tr>
+        <tr>
+          <th scope="row">A19</th>
+          <td>26</td>
+        </tr>
+        <tr>
+          <th scope="row">A20</th>
+          <td id="a2">28</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    <h2>Table 2</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Index #</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Alpha</th>
+          <td id="a"></td>
+        </tr>
+        <tr>
+          <th scope="row">Beta</th>
+          <td id="b"></td>
+        </tr>
+        <tr>
+          <th scope="row">Charlie</th>
+          <td id="c"></td>
+        </tr>
+      </tbody>
+
+      <script>
+        var a1 = document.getElementById("a1").innerHTML
+        var a2 = document.getElementById("a2").innerHTML
+        var a = Number(a1)+Number(a2)
+        document.getElementById("a").innerHTML = a;
+
+        var b1 = document.getElementById("b1").innerHTML
+        var b2 = document.getElementById("b2").innerHTML
+        var b = Number(b1)/Number(b2)
+        document.getElementById("b").innerHTML = b;
+
+        var c1 = document.getElementById("c1").innerHTML
+        var c2 = document.getElementById("c2").innerHTML
+        var c = Number(c1)*Number(c2)
+        document.getElementById("c").innerHTML = c;
+        /*if (isNaN(a)) {
+          alert("it is not a valid number");
+        } else {
+          alert("it is a valid number");
+        }*/
+      </script>
+    </table>
+</body>
+</html>
